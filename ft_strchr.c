@@ -1,24 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 14:02:28 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/08 14:02:29 by ayafshar         ###   ########.fr       */
+/*   Created: 2025/10/08 14:00:27 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/08 18:15:57 by ayafshar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
-int	ft_toupper(int c)
-{
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 32;
 
-		return (c);
+char	*ft_strchr(const char *str, int ch)
+{
+	unsigned char	p;
+	size_t			i;
+
+	p = (unsigned char)ch;
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if ((unsigned char)str[i] == p)
+		{
+			return ((char *)&str[i]);
+		}
+		i++;
 	}
+	if ((unsigned char)str[i] == p)
+		return ((char *)&str[i]);
+	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char str[] = "ayda khar ast.";
+// 	char *s = ft_strchr(str, 'k');
+// 	printf("%s", s);
+// 	return (0);
+// }

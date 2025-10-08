@@ -1,6 +1,17 @@
-// #include <stddef.h>
-// #include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/08 14:00:43 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/08 14:00:44 by ayafshar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+
+#include "libft.h"
 void	ft_bzero(void *str, size_t n)
 {
 	size_t			i;
@@ -14,11 +25,3 @@ void	ft_bzero(void *str, size_t n)
 		i++;
 	}
 }
-// int	main(void)
-// {
-// 	char str[] = "ayda khar ast";
-// 	ft_bzero(str, 4);
-// 	for (int i = 0; i < 13; i++)
-// 		printf("%d ", str[i]);
-// 	return (0);
-// }

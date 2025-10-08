@@ -1,5 +1,17 @@
-#include <stddef.h>
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/08 14:01:52 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/08 14:01:53 by ayafshar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+#include "libft.h"
 
 void	*ft_memset(void *str, int x, size_t n)
 {
@@ -15,10 +27,3 @@ void	*ft_memset(void *str, int x, size_t n)
 	}
 	return (str);
 }
-// int	main(void)
-// {
-// 	char str[] = "ayda khar ast";
-// 	ft_memset(str, 'x', 4);
-// 	printf("%s\n", str);
-// 	return (0);
-// }

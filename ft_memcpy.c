@@ -1,5 +1,17 @@
-#include <stddef.h>
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/08 14:01:40 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/08 14:01:41 by ayafshar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -20,13 +32,4 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		i++;
 	}
 	return (dest);
-}
-int	main(void)
-{
-	char	dest[] = "ayda khar ast";
-	char	src[] = "aliegtyhj";
-
-	ft_memcpy(dest, src, 5);
-	printf("%s\n", dest);
-	return (0);
 }

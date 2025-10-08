@@ -1,4 +1,18 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/08 14:01:03 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/08 14:01:04 by ayafshar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
@@ -7,8 +21,3 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isalpha('B'));
-	return (0);
-}
