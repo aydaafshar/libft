@@ -3,22 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:02:28 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/08 14:02:29 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/10 19:36:29 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
 		c -= 32;
-
 		return (c);
 	}
 }

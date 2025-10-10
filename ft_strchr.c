@@ -34,8 +34,20 @@ char	*ft_strchr(const char *str, int ch)
 
 // int	main(void)
 // {
-// 	char str[] = "ayda khar ast.";
-// 	char *s = ft_strchr(str, 'k');
-// 	printf("%s", s);
+// 	char	str[] = "username: ayda , paswword: 1234";
+// 	char	*s;
+// 	char	*comma;
+// 	char	*p;
+
+// 	s = ft_strchr(str, ':');
+// 	while (*s == ' ' || *s == ':')
+// 		s++;
+// 	comma = ft_strchr(s, ',');
+// 	*comma = '\0';
+// 	printf("%s\n", s);
+// 	p = ft_strchr(comma + 1, ':');
+// 	while (*p == ' ' || *p == ':')
+// 		p++;
+// 	printf("%s", p);
 // 	return (0);
 // }

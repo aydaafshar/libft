@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:00:43 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/08 14:00:44 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/10 19:31:55 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
+
 void	ft_bzero(void *str, size_t n)
 {
 	size_t			i;

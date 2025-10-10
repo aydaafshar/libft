@@ -1,20 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/08 14:01:25 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/10 19:32:48 by ayda             ###   ########.fr       */
+/*   Created: 2025/10/10 19:12:17 by ayda              #+#    #+#             */
+/*   Updated: 2025/10/10 19:34:07 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
+	size_t	i;
+
+	i = 0;
+	while (str1[i] != '\0' && str2[i] != '\0' && i < n)
+	{
+		if (str1[i] != str2[i])
+		{
+			return (str1[i] - str2[i]);
+		}
+		i++;
+	}
 	return (0);
 }
+
+// int main(){
+//     const char *str1= "aydl";
+//     const char *str2 = "ayda";
+//     int i = ft_strncmp(str1,str2, 3);
+//     printf("%d",i);
+//     return (0);
+// }

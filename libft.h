@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/10 21:31:05 by ayda              #+#    #+#             */
+/*   Updated: 2025/10/10 21:31:09 by ayda             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# include <stddef.h> //for size_t type
+# include <stddef.h>
 # include <stdio.h>
-# include <stdlib.h> //for malloc/free
-# include <unistd.h> //for write
+# include <stdlib.h>
+# include <unistd.h>
+
 // functions
 
 int		ft_isalpha(int c);
@@ -21,5 +33,9 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize);
 int		ft_toupper(int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strchr(const char *str, int ch);
+char	*ft_strrchr(const char *str, int c);
+int		ft_strncmp(const char *str1, const char *str2, size_t n);
+void	*ft_memchr(const void *str, int c, size_t n);
+int		memcmp(const void *str1, const void *str2, size_t n);
 
 #endif

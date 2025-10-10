@@ -3,21 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:02:17 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/08 14:02:18 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/10 19:40:35 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 	{
 		c += 32;
-
 		return (c);
 	}
 }
