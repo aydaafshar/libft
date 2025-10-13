@@ -6,7 +6,7 @@
 /*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 21:31:05 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/13 10:22:57 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/13 16:06:18 by ayafshar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t n);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t n, size_t size);
 char	*ft_strdup(const char *str);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strjoin(const char *s1, char const *s2);
+char	*ft_strtrim(const char *s1, char const *set);
+char	**ft_split(const char *s, char c);
 
 #endif

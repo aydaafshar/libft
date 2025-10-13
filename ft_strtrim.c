@@ -1,48 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 10:21:50 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/13 16:06:48 by ayafshar         ###   ########.fr       */
+/*   Created: 2025/10/13 11:56:22 by ayafshar          #+#    #+#             */
+/*   Updated: 2025/10/13 16:07:20 by ayafshar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_strtrim(const char *s1, char const *set)
 {
-	char	*str;
-	size_t	i;
-	size_t	s_len;
+	size_t	start;
+	size_t	end;
+	char	*arr;
 
-	s_len = ft_strlen(s);
-	i = 0;
-	if (start >= s_len)
-		return (ft_strdup(""));
-	if (len > ft_strlen(s + start))
-		len = ft_strlen(s + start);
-	str = (char *)malloc((len + 1) * sizeof(char));
-	if (!str)
+	if (!s1 || !set)
 		return (NULL);
-	while (i < len && s[start + i])
+	start = 0;
+	while (s1[start] && ft_strchr(set, s1[start]))
 	{
-		str[i] = s[start + i];
-		i++;
+		start++;
 	}
-	str[i] = '\0';
-	return (str);
+	end = ft_strlen(s1);
+	while (end > start && ft_strchr(set, s1[end - 1]))
+	{
+		end--;
+	}
+	arr = ft_substr(s1, start, end - start);
+	if (!arr)
+		return (NULL);
+	return (arr);
 }
 
 // int	main(void)
 // {
 // 	char	*str;
-// 	char	*str2;
+// 	char	*set;
+// 	char	*res;
 
-// 	str = "hello, world";
-// 	str2 = ft_substr(str, 7, 2);
-// 	printf("%s", str2);
+// 	set = "-";
+// 	str = "--hello--";
+// 	res = ft_strtrim(str, set);
+// 	printf("%s", res);
+// 	free(res);
 // 	return (0);
 // }
