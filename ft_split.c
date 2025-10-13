@@ -6,7 +6,7 @@
 /*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:10:57 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/13 16:39:48 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/13 17:17:32 by ayafshar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,15 @@ static size_t	count_words(const char *s, char c)
 	return (count);
 }
 
-static void	free_all(char **arr, size_t j)
+static char	**free_all(char **arr, size_t j)
 {
 	while (j > 0)
-	{
 		free(arr[j--]);
-		free(arr);
-	}
+	free(arr);
+	return (NULL);
 }
 
-static char	**fill_array(char **arr, char *s, char c)
+static char	**fill_array(char **arr, const char *s, char c)
 {
 	size_t	start;
 	size_t	i;
@@ -76,3 +75,20 @@ char	**ft_split(const char *s, char c)
 	arr = fill_array(arr, s, c);
 	return (arr);
 }
+
+// int	main(void)
+// {
+// 	char	*str;
+// 	char	**res;
+
+// 	str = "ayda is gol";
+// 	res = ft_split(str, ' ');
+// 	for (int i = 0; res[i] != NULL; i++)
+// 	{
+// 		printf("%s\n", res[i]);
+// 	}
+// 	for (int i = 0; res[i] != NULL; i++)
+// 		free(res[i]);
+// 	free(res);
+// 	return (0);
+// }
