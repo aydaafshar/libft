@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 23:59:32 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/12 00:57:17 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/12 19:09:05 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	checksign(const char *str, int *sign, int *i)
 	}
 	*i = j;
 }
+
 int	ft_atoi(const char *str)
 {
 	int					i;
@@ -34,7 +35,7 @@ int	ft_atoi(const char *str)
 	i = 0;
 	res = 0;
 	sign = 1;
-	while (str[i] == ' ' || str[i] >= 9 && str[i] <= 13)
+	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	checksign(str, &sign, &i);
 	while (str[i] >= '0' && str[i] <= '9')
@@ -44,3 +45,14 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * res);
 }
+
+// int	main(void)
+// {
+// 	char	*str;
+// 	int		i;
+
+// 	str = "  -2er123ayda";
+// 	i = ft_atoi(str);
+// 	printf("%d", i);
+// 	return (0);
+// }
