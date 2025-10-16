@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:01:40 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/10 19:31:29 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/15 16:34:27 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	p = (unsigned char *)dest;
 	x = (unsigned char *)src;
+	if (!dest && !src)
+		return (NULL);
 	if (dest == src)
-	{
 		return (dest);
-	}
 	while (i < n)
 	{
 		p[i] = x[i];
