@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 18:50:47 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/12 20:29:02 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 18:14:11 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,6 @@ void	*ft_calloc(size_t n, size_t size)
 
 	array = (char *)malloc(n * size);
 	i = 0;
-	if (n == 0 || size == 0)
-		return (malloc(0));
-	if ((n * size) / n != size)
-		return (NULL);
 	if (array == NULL)
 		return (NULL);
 	while (i < (n * size))
