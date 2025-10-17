@@ -6,13 +6,13 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:12:25 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/10 19:31:47 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 16:29:03 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	memcmp(const void *str1, const void *str2, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	size_t			i;
 	unsigned char	*s1;
@@ -31,3 +31,14 @@ int	memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	const char	*str1;
+	// const char	*str2;
+
+	// str1 = "la";
+	// str2 = "ayda khar ast";
+	// printf("%d", ft_memcmp(str1, str2, 3));
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 19:12:31 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/10 19:37:51 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 16:08:25 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,17 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char	c;
+// 	char	*str;
+// 	char	*str2;
+
+// 	c = 'h';
+// 	str = "ayda khar ast";
+// 	str2 = ft_memchr(str, c,7);
+// 	printf("%s", str2);
+// 	
+// 	return (0);
+// }

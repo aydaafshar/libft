@@ -6,13 +6,13 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/11 23:59:32 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/12 19:09:05 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 14:43:07 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	checksign(const char *str, int *sign, int *i)
+static void	checksign(const char *str, int *sign, int *i)
 {
 	int	j;
 
@@ -28,9 +28,9 @@ void	checksign(const char *str, int *sign, int *i)
 
 int	ft_atoi(const char *str)
 {
-	int					i;
-	unsigned long int	res;
-	int					sign;
+	int				i;
+	unsigned long	res;
+	int				sign;
 
 	i = 0;
 	res = 0;

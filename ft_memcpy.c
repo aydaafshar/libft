@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:01:40 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/15 16:34:27 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 16:44:51 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int	main(void)
+// {
+// 	const char	*str1 = "codam 25 ";
+// 	char		dest[23] = "ayda khar ast";
+// 	char		*res;
+
+// 	res = ft_memcpy(dest, str1, 3);
+// 	printf("%s", res);
+// 	return (0);
+// }

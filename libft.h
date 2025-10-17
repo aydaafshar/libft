@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/10 21:31:05 by ayda              #+#    #+#             */
-/*   Updated: 2025/10/15 21:44:57 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 17:06:36 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,16 +27,17 @@ int		ft_isprint(int c);
 size_t	ft_strlen(const char *str);
 void	*ft_memset(void *str, int x, size_t n);
 void	ft_bzero(void *str, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strchr(const char *str, int ch);
 char	*ft_strrchr(const char *str, int c);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
-int		memcmp(const void *str1, const void *str2, size_t n);
+int		ft_memcmp(const void *str1, const void *str2, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t n);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t n, size_t size);

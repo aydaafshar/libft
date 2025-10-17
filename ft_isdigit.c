@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:01:25 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/10 19:32:48 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 15:39:29 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,9 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	printf("%d", ft_isdigit('c'));
+// 	return (0);
+// }

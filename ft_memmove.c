@@ -6,7 +6,7 @@
 /*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 14:01:46 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/14 16:46:55 by ayda             ###   ########.fr       */
+/*   Updated: 2025/10/17 16:58:23 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	checkadress(p, x, n);
 	return (dest);
 }
+
+// int	main(void)
+// {
+// char	str1[] = "codam 25 ";
+//  ft_memmove(str1 + 1, str1, 3);
+// printf("%s", str1);
+// 	return (0);
+// }
