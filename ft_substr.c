@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayafshar <ayafshar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ayda <ayda@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 10:21:50 by ayafshar          #+#    #+#             */
-/*   Updated: 2025/10/13 16:06:48 by ayafshar         ###   ########.fr       */
+/*   Updated: 2025/10/20 00:05:38 by ayda             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_len;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
 	i = 0;
 	if (start >= s_len)
